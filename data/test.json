@@ -1,0 +1,22 @@
+[{
+  "id": 1,
+  "gender": "Male",
+  "first_name": "George",
+  "last_name": "Murray",
+  "email": "gmurray0@symantec.com",
+  "ip_address": "200.50.2.50"
+}, {
+  "id": 2,
+  "gender": "Female",
+  "first_name": "Dorothy",
+  "last_name": "Greene",
+  "email": "dgreene1@addtoany.com",
+  "ip_address": "97.68.210.247"
+}, {
+  "id": 3,
+  "gender": "Female",
+  "first_name": "Lisa",
+  "last_name": "Johnson",
+  "email": "ljohnson2@mit.edu",
+  "ip_address": "196.53.51.225"
+}]
