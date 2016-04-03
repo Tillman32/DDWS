@@ -3,7 +3,7 @@ Rapidly build prototype concepts, and seamlessly request your data with this int
 
 ## Installation
 
-1) Open a terminal/cmd window, navigate to the application root and run: `npm install`
+1) Open a terminal/cmd window, navigate to the application root and run: `npm install`  
 2) Run the server: `node server.js`
 
 ## Usage
