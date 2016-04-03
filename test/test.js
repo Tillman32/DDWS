@@ -25,7 +25,7 @@ function fileTest() {
         // Request the health endpoint
         request
             .get('/api/test')
-            // Expect a 200
+            // Expect a valid JSON array
             .expect(isValidArrayResponse)
             .end(done);        
     });
@@ -36,7 +36,7 @@ function fileKeyValueTest() {
         // Request the health endpoint
         request
             .get('/api/test/first_name/George')
-            // Expect a 200
+            // Expect a valid JSON array of a single object
             .expect(isValidArrayOfObject)
             .end(done);        
     });
