@@ -3,11 +3,56 @@ Rapidly build prototype concepts, and seamlessly request your data with this int
 
 ## Installation
 
-TODO: Describe the installation process
+1) Open a terminal/cmd window, navigate to the application root and run: `npm install`
+2) Run the server: `node server.js`
 
 ## Usage
 
-TODO: Write usage instructions
+Simply add your JSON data to the `data` directory within the application and navigate to `http://localhost:8080/api/<JSONFileName>`
+
+> Note the JSON file name does not need the .json extension.
+
+## Examples
+Given the following JSON data file "exampledata.json" in the data directory:
+```JSON
+[{
+      "id": 1,
+      "gender": "Male",
+      "first_name": "George",
+      "last_name": "Murray",
+      "email": "gmurray0@symantec.com",
+      "ip_address": "200.50.2.50"
+    }, {
+      "id": 2,
+      "gender": "Female",
+      "first_name": "Dorothy",
+      "last_name": "Greene",
+      "email": "dgreene1@addtoany.com",
+      "ip_address": "97.68.210.247"
+    }, {
+      "id": 3,
+      "gender": "Female",
+      "first_name": "Lisa",
+      "last_name": "Johnson",
+      "email": "ljohnson2@mit.edu",
+      "ip_address": "196.53.51.225"
+}]
+```
+I'm able to tell the service how I want to filter this data via RESTFUL calls to the service. For example, if I wanted to select an object, whose key is `id` and value is `2`:
+
+`http://localhost:8080/api/exampledata/id/2`
+
+This would return the single object, who's id is 2:
+```JSON
+{
+  "id": 2,
+  "gender": "Female",
+  "first_name": "Dorothy",
+  "last_name": "Greene",
+  "email": "dgreene1@addtoany.com",
+  "ip_address": "97.68.210.247"
+}
+```
 
 ## Contributing
 
@@ -16,14 +61,6 @@ TODO: Write usage instructions
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
-
-## History
-
-TODO: Write history
-
-## Credits
-
-TODO: Write credits
 
 ## License
 
