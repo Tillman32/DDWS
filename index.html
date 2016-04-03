@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>DDWS - Data-driven Web Service by Tillman32</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">DDWS - Data-driven Web Service</h1>
+      <h2 class="project-tagline">Rapidly build prototype concepts, and seamlessly request your data with this intelligent web service. </h2>
+      <a href="https://github.com/Tillman32/DDWS" class="btn">View on GitHub</a>
+      <a href="https://github.com/Tillman32/DDWS/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/Tillman32/DDWS/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>1) Open a terminal/cmd window, navigate to the application root and run: <code>npm install</code><br>
+2) Run the server: <code>node server.js</code></p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>Simply add your JSON data to the <code>data</code> directory within the application and navigate to <code>http://localhost:8080/api/&lt;JSONFileName&gt;</code></p>
+
+<blockquote>
+<p>Note the JSON file name does not need the .json extension.</p>
+</blockquote>
+
+<h2>
+<a id="examples" class="anchor" href="#examples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Examples</h2>
+
+<p>Given the following JSON data file "exampledata.json" in the data directory:</p>
+
+<div class="highlight highlight-source-json"><pre>[{
+      <span class="pl-s"><span class="pl-pds">"</span>id<span class="pl-pds">"</span></span>: <span class="pl-c1">1</span>,
+      <span class="pl-s"><span class="pl-pds">"</span>gender<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Male<span class="pl-pds">"</span></span>,
+      <span class="pl-s"><span class="pl-pds">"</span>first_name<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>George<span class="pl-pds">"</span></span>,
+      <span class="pl-s"><span class="pl-pds">"</span>last_name<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Murray<span class="pl-pds">"</span></span>,
+      <span class="pl-s"><span class="pl-pds">"</span>email<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>gmurray0@symantec.com<span class="pl-pds">"</span></span>,
+      <span class="pl-s"><span class="pl-pds">"</span>ip_address<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>200.50.2.50<span class="pl-pds">"</span></span>
+    }, {
+      <span class="pl-s"><span class="pl-pds">"</span>id<span class="pl-pds">"</span></span>: <span class="pl-c1">2</span>,
+      <span class="pl-s"><span class="pl-pds">"</span>gender<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Female<span class="pl-pds">"</span></span>,
+      <span class="pl-s"><span class="pl-pds">"</span>first_name<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Dorothy<span class="pl-pds">"</span></span>,
+      <span class="pl-s"><span class="pl-pds">"</span>last_name<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Greene<span class="pl-pds">"</span></span>,
+      <span class="pl-s"><span class="pl-pds">"</span>email<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>dgreene1@addtoany.com<span class="pl-pds">"</span></span>,
+      <span class="pl-s"><span class="pl-pds">"</span>ip_address<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>97.68.210.247<span class="pl-pds">"</span></span>
+    }, {
+      <span class="pl-s"><span class="pl-pds">"</span>id<span class="pl-pds">"</span></span>: <span class="pl-c1">3</span>,
+      <span class="pl-s"><span class="pl-pds">"</span>gender<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Female<span class="pl-pds">"</span></span>,
+      <span class="pl-s"><span class="pl-pds">"</span>first_name<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Lisa<span class="pl-pds">"</span></span>,
+      <span class="pl-s"><span class="pl-pds">"</span>last_name<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Johnson<span class="pl-pds">"</span></span>,
+      <span class="pl-s"><span class="pl-pds">"</span>email<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>ljohnson2@mit.edu<span class="pl-pds">"</span></span>,
+      <span class="pl-s"><span class="pl-pds">"</span>ip_address<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>196.53.51.225<span class="pl-pds">"</span></span>
+}]</pre></div>
+
+<p>I'm able to tell the service how I want to filter this data via RESTFUL calls to the service. For example, if I wanted to select an object, whose key is <code>id</code> and value is <code>2</code>:</p>
+
+<p><code>http://localhost:8080/api/exampledata/id/2</code></p>
+
+<p>This would return the single object, who's id is 2:</p>
+
+<div class="highlight highlight-source-json"><pre>{
+  <span class="pl-s"><span class="pl-pds">"</span>id<span class="pl-pds">"</span></span>: <span class="pl-c1">2</span>,
+  <span class="pl-s"><span class="pl-pds">"</span>gender<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Female<span class="pl-pds">"</span></span>,
+  <span class="pl-s"><span class="pl-pds">"</span>first_name<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Dorothy<span class="pl-pds">"</span></span>,
+  <span class="pl-s"><span class="pl-pds">"</span>last_name<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Greene<span class="pl-pds">"</span></span>,
+  <span class="pl-s"><span class="pl-pds">"</span>email<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>dgreene1@addtoany.com<span class="pl-pds">"</span></span>,
+  <span class="pl-s"><span class="pl-pds">"</span>ip_address<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>97.68.210.247<span class="pl-pds">"</span></span>
+}</pre></div>
+
+<h2>
+<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contributing</h2>
+
+<ol>
+<li>Fork it!</li>
+<li>Create your feature branch: <code>git checkout -b my-new-feature</code>
+</li>
+<li>Commit your changes: <code>git commit -am 'Add some feature'</code>
+</li>
+<li>Push to the branch: <code>git push origin my-new-feature</code>
+</li>
+<li>Submit a pull request :D</li>
+</ol>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
+
+<p>The MIT License (MIT)</p>
+
+<p>Copyright (c) 2016 Brandon</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/Tillman32/DDWS">DDWS - Data-driven Web Service</a> is maintained by <a href="https://github.com/Tillman32">Tillman32</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
