@@ -64,8 +64,7 @@ function filterData(json, key, value) {
 };
 
 function readFile(fileName, callback) {
-    // TODO: Fix pathing for other OS's
-    fs.readFile(rootDir + config.server.data + '\\' + fileName + '.json', 'utf8', function(err, data){
+    fs.readFile(path.join(rootDir, config.server.data, fileName + '.json'), 'utf8', function(err, data){
        if(err) return callback(err)
        callback(null, JSON.parse(data));
     });
